@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# THE PANTS PROJECT
 
-## Getting Started
+## ABOUT
 
-First, run the development server:
+The Pants Project is an interactive visualization that explores the latent space of pants using machine learning. It creates a visual map where each point represents a pair of pants, and similar pants are positioned close together in this digital space.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## WHAT IT DOES
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**PANTS DENSITY MAP**: The left panel shows a 100x100 grid where brighter orange dots indicate areas with higher concentrations of similar pants. This map reveals natural clusters and patterns in how different types of pants relate to each other.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**INTERACTIVE EXPLORATION**: Click anywhere on the density map to find the 9 most similar pants to that location. The right panel displays these similar pants, allowing you to discover new styles and understand how different pants relate to each other.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**VISUAL ZONES**: The map is divided into labeled zones that represent different categories of pants:
+- **LIGHT ZONE**: Casual, light-colored pants
+- **DARK ZONE**: Formal, dark-colored pants  
+- **PATTERN ZONE**: Pants with patterns and prints
+- **DENIM ZONE**: Jeans and denim styles
+- **DARK DENIM ZONE**: Premium dark denim
 
-## Learn More
+## HOW IT WORKS
 
-To learn more about Next.js, take a look at the following resources:
+The project uses a VGG-18 neural network to analyze thousands of pants images and create a mathematical representation of their visual features. Similar pants end up close together in this "latent space," creating natural clusters that we can visualize and explore.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## PURPOSE
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project demonstrates how machine learning can help us understand and explore large collections of fashion items. It shows how AI can identify patterns and relationships that might not be obvious to the human eye, making it easier to discover new styles and understand fashion trends.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*The Pants Project - Exploring Fashion Through AI*
+*Dylan Hubert and Luke Heitman*
